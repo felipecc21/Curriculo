@@ -3,3 +3,34 @@
     max-width: 200px;
     border: 1px solid black;
 }
+
+.btn-primary{
+    background-color: #42A8C0; /* Cor de fundo azul celeste */
+    color: #fff; /* Cor do texto branca */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 50px; /* Borda arredondada */
+    cursor: pointer; /* Ícone de cursor de ponteiro ao passar por cima */
+    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+            
+}
+
+.btn-primary:hover {
+    background-color: #2980b9; /* Cor de fundo azul celeste mais escura ao passar por cima */
+}
+
+.show_more {
+    background-color: #42A8C0; /* Cor de fundo azul celeste */
+    color: #fff; /* Cor do texto branca */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 50px; /* Borda arredondada */
+    cursor: pointer; /* Ícone de cursor de ponteiro ao passar por cima */
+    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+}
+
+.show_more:hover {
+    background-color: #2980b9; /* Cor de fundo azul celeste mais escura ao passar por cima */
+}
+
+
