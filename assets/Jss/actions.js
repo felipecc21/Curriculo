@@ -80,7 +80,7 @@ function toggleVisibilityXp() {
 
 // Pop-up de apresentação
 
-document.addEventListener("DOMContentLoaded", function () {
+/*document.addEventListener("DOMContentLoaded", function () {
   const popupTrigger = document.getElementById("popupTrigger");
   const popup = document.getElementById("popup");
   const closeBtn = document.getElementById("closeBtn");
@@ -92,4 +92,30 @@ document.addEventListener("DOMContentLoaded", function () {
   closeBtn.addEventListener("click", function () {
     popup.style.display = "none";
   });
+});*/
+
+document.addEventListener("DOMContentLoaded", function () {
+  const popupTrigger = document.getElementById("popupTrigger");
+  const popup = document.getElementById("popup");
+  const closeBtn = document.getElementById("closeBtn");
+
+  // Função para mostrar o popup com fade in
+  function showPopup() {
+    popup.style.display = "block";
+    setTimeout(function () {
+      popup.style.opacity = "1";
+    }, 10);
+  }
+
+  // Função para ocultar o popup com fade out
+  function hidePopup() {
+    popup.style.opacity = "0";
+    setTimeout(function () {
+      popup.style.display = "none";
+    }, 500); // Tempo correspondente à duração da transição
+  }
+
+  popupTrigger.addEventListener("click", showPopup);
+
+  closeBtn.addEventListener("click", hidePopup);
 });

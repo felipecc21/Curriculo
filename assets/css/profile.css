@@ -2,6 +2,19 @@
     border-radius: 100%;
     max-width: 200px;
     border: 1px solid black;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-container {
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+/* Efeito de zoom ao passar o mouse */
+.profile-container:hover .profile {
+    transform: scale(1.1);
 }
 
 .btn-primary {
@@ -48,15 +61,32 @@
 
 }
 
-#closeBtn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    cursor: pointer;
-    
-}
+
 
 #popupTrigger {
     cursor: pointer;
 }
+
+
+
+#popup {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    
+  }
+  
+ 
+
+  #closeBtn {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #aaa;
+  }
+  
+  #closeBtn:hover {
+    color: #2d7788;
+  }
