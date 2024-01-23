@@ -1,36 +1,62 @@
-.profile{
+.profile {
     border-radius: 100%;
     max-width: 200px;
     border: 1px solid black;
 }
 
-.btn-primary{
-    background-color: #42A8C0; /* Cor de fundo azul celeste */
-    color: #fff; /* Cor do texto branca */
-    padding: 10px 20px; /* Espaçamento interno */
-    border: none; /* Sem borda */
-    border-radius: 50px; /* Borda arredondada */
-    cursor: pointer; /* Ícone de cursor de ponteiro ao passar por cima */
-    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
-            
+.btn-primary {
+    background-color: #42A8C0;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
 }
 
 .btn-primary:hover {
-    background-color: #2980b9; /* Cor de fundo azul celeste mais escura ao passar por cima */
+    background-color: #2980b9;
 }
 
 .show_more {
-    background-color: #42A8C0; /* Cor de fundo azul celeste */
-    color: #fff; /* Cor do texto branca */
-    padding: 10px 20px; /* Espaçamento interno */
-    border: none; /* Sem borda */
-    border-radius: 50px; /* Borda arredondada */
-    cursor: pointer; /* Ícone de cursor de ponteiro ao passar por cima */
-    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+    background-color: #42A8C0;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
 }
 
 .show_more:hover {
-    background-color: #2980b9; /* Cor de fundo azul celeste mais escura ao passar por cima */
+    background-color: #2980b9;
 }
 
+.popup-content {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    
 
+}
+
+#closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+#popupTrigger {
+    cursor: pointer;
+}

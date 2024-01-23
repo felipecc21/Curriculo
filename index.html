@@ -28,9 +28,9 @@
         <div class="sidebar-wrapper">
             <div class="profile-container">
                 <img class="profile" src="assets/images/profile.png" alt="" />
-                <h1 class="name">Felipe Cordeiro</h1>
+                <h1 class="name" id="popupTrigger">Felipe Cordeiro</h1>
                 <h3 class="tagline">Estudante</h3>
-            </div><!--//profile-container-->
+            </div><!--//Imagem, nome e desc-->
             
             <div class="contact-container container-block">
                 <ul class="list-unstyled contact-list">
@@ -39,7 +39,7 @@
                     <li class="linkedin"><i class="fa-brands fa-linkedin-in"></i><a href="https://bit.ly/3S5O4wD" target="_blank">linkedin.com/felipecc97</a></li>
                     <li class="github"><i class="fa-brands fa-github"></i><a href="https://bit.ly/3vTp2t6" target="_blank">github.com/felipecc21</a></li>
                 </ul>
-            </div><!--//contact-container-->
+            </div><!--//contatos-container-->
             <div class="education-container container-block">
                 <h2 class="container-block-title">Educação</h2>
                 <div class="item">
@@ -52,44 +52,53 @@
                     <h5 class="meta">Cruzeiro do Sul</h5>
                     <div class="time"> 6º período </div>
                 </div>
-            </div><!--//education-container-->
+            </div><!--//educação-container-->
 
             <div class="education-container container-block">
                 <h2 class="container-block-title">Cursos Livres</h2>
+
                 <div class="item">
-                    <h4 class="degree"><a href="https://bit.ly/4b2nbm3" target="_blank">HTML e CSS na Prática</a></h4>
+                    <h4 class="degree"> <a href="assets/data/CERTIFICADO.pdf" target="_blank">Programação para Internet</a></h4>
+                    <h5 class="meta">Estácio</h5>
+                    <div class="time"> 08/23 </div>
+                </div>
+                <div class="item">
+                    <h4 class="degree"> <a href="*" target="_blank">Inteligência emocional</a></h4>
+                    <h5 class="meta">SEBRAE</h5>
+                    <div class="time"> 05/23 </div>
+                </div>
+                <div class="item">
+                    <h4 class="degree"> <a href="*" target="_blank">Lei Geral de Proteção de Dados (LGPD)</a></h4>
+                    <h5 class="meta">Fundação Bradesco</h5>
+                    <div class="time"> 03/23 </div>
+
+                </div>
+                <div class="item extra d-none">
+                    <h4 class="degree"> <a href="*" target="_blank">Introdução ao JavaScript: Fundação Bradesco</a></h4>
+                    <h5 class="meta">Fundação Bradesco</h5>
+                    <div class="time"> 03/23 </div>
+
+                </div>
+                <div class="item extra d-none">
+                    <h4 class="degree"> <a href="*" target="_blank"> HTML - Básico</a></h4>
+                    <h5 class="meta">Fundação Bradesco</h5>
+                    <div class="time"> 03/23 </div>
+
+                </div>
+                <div class="item extra d-none">
+                    <h4 class="degree"><a href="*" target="_blank">HTML e CSS na Prática</a></h4>
                     <h5 class="meta">Fundação Bradesco</h5>
                     <div class="time">02/23</div>
                 </div>
-                <div class="item">
-                    <h4 class="degree"> <a href="https://bit.ly/42bklY2" target="_blank"> HTML - Básico</a></h4>
-                    <h5 class="meta">Fundação Bradesco</h5>
-                    <div class="time"> 03/23 </div>
-                </div>
-                <div class="item">
-                    <h4 class="degree"> <a href="https://bit.ly/4b2nbm3" target="_blank">Sistemas Operacionais - Conceitos Básicos</a></h4>
+                <div class="item extra d-none">
+                    <h4 class="degree"> <a href="*" target="_blank">Microsoft Excel 2016 - Básico</a></h4>
                     <h5 class="meta">Fundação Bradesco</h5>
                     <div class="time"> 08/21 </div>
                 </div>
                 <div class="item extra d-none">
-                    <h4 class="degree"> <a href="https://bit.ly/42bklY2" target="_blank">Microsoft Excel 2016 - Básico</a></h4>
+                    <h4 class="degree"> <a href="*" target="_blank">Sistemas Operacionais - Conceitos Básicos</a></h4>
                     <h5 class="meta">Fundação Bradesco</h5>
                     <div class="time"> 08/21 </div>
-                </div>
-                <div class="item extra d-none">
-                    <h4 class="degree"> <a href="https://bit.ly/4b2nbm3" target="_blank">Introdução ao JavaScript: Fundação Bradesco</a></h4>
-                    <h5 class="meta">Fundação Bradesco</h5>
-                    <div class="time"> 03/23 </div>
-                </div>
-                <div class="item extra d-none">
-                    <h4 class="degree"> <a href="https://bit.ly/42bklY2" target="_blank">Lei Geral de Proteção de Dados (LGPD)</a></h4>
-                    <h5 class="meta">Fundação Bradesco</h5>
-                    <div class="time"> 03/23 </div>
-                </div>
-                <div class="item extra d-none">
-                    <h4 class="degree"> <a href="https://bit.ly/4b2nbm3" target="_blank">Inteligência emocional</a></h4>
-                    <h5 class="meta">SEBRAE</h5>
-                    <div class="time"> 05/23 </div>
                 </div>
 
                 
@@ -121,16 +130,31 @@
             </div><!--//interests-->
             
         </div><!--//Corpo-->
+
+        <!-- pop-up de apresentação -->
+
+        <div id="popup" class="popup-content">
+            <span id="closeBtn">&times;</span>
+            <section class="section summary-section">
+                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-user"></i></span>&nbsp;&nbsp;APRESENTAÇÃO</h2>
+                <div class="summary">
+                    <p>Olá! Meu nome é Felipe Cordeiro, sou um entusiasta de informática e história, residente na cidade de Uberlândia-MG. Com 26 anos, busco oportunidades na área de TI para aplicar minha paixão pelo aprendizado e oferecer um serviço pautado em valores como humildade, honestidade e lealdade. Estou determinado a contribuir positivamente em um novo ambiente profissional, buscando constante crescimento e aprendizado.
+                    </p>
+                </div>
+            </section>
+        </div>
         
         <div class="main-wrapper">
-            
+
+            <!-- Apresentação no corpo da página. -->
+            <!--
             <section class="section summary-section">
                 <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-user"></i></span>APRESENTAÇÃO</h2>
                 <div class="summary">
                     <p>Olá! Meu nome é Felipe Cordeiro, sou um entusiasta de informática e história, residente na cidade de Uberlândia-MG. Com 26 anos, busco oportunidades na área de TI para aplicar minha paixão pelo aprendizado e oferecer um serviço pautado em valores como humildade, honestidade e lealdade. Estou determinado a contribuir positivamente em um novo ambiente profissional, buscando constante crescimento e aprendizado.
                     </p>
-                </div><!--//summary-->
-            </section><!--//section-->
+                </div>
+            </section>-->
 
             <section class="section summary-section">
                 <h2 class="section-title">
@@ -151,7 +175,7 @@
                     <div class="meta">
                         <div class="upper-row">
                             <h3 class="job-title">Atendente Sr</h3>
-                            <div class="time">2023 - Present</div>
+                            <div class="time">2023 - Presente</div>
                         </div><!--//upper-row-->
                         <div class="company">Algar Tech, Uberlândia-MG</div>
                     </div><!--//meta-->
@@ -169,7 +193,7 @@
                         <div class="company">Algar Tech, Uberlândia-MG</div>
                     </div><!--//meta-->
                     <div class="details">
-                        <p>Na função de atendente, dediquei-me ao atendimento telefônico aos clientes, esclarecendo dúvidas e resolvendo problemas relacionados às máquinas de café e serviços empresariais. Realizei o registro detalhado de informações, processei pedidos, acompanhei o status de entregas e fornecei orientações sobre produtos, inclusive promovendo ofertas para aumentar as vendas. Colaborando em equipe, trabalhei com outros atendentes e diversos setores para garantir a satisfação dos clientes e manter a qualidade no atendimento.</p>  
+                        <p>Na função de atendente, dediquei-me ao atendimento telefônico aos clientes, esclarecendo dúvidas e resolvendo problemas relacionados às máquinas de café e serviços empresariais. Realizei o registro detalhado de informações, processei pedidos, acompanhei o status de entregas e fornecei orientações sobre produtos, inclusive promovendo ofertas para aumentar as vendas. Colaborando em equipe, trabalhei com outros atendentes e diversos setores para garantir a satisfação dos clientes e manter a qualidade no atendimento. De uma forma geral, esse emprego foi um divisor de aguas na minha vida pessoal, sou muito grato a ele. </p>  
                         
                     </div><!--//details-->
                 </div><!--//item-->
@@ -177,13 +201,13 @@
                 <div class="item more d-none">
                     <div class="meta">
                         <div class="upper-row">
-                            <h3 class="job-title">Onofre</h3>
-                            <div class="time">2019 - 2022</div>
+                            <h3 class="job-title">Cobrador Externo</h3>
+                            <div class="time">2017 - 2017</div>
                         </div><!--//upper-row-->
-                        <div class="company">Algar Tech, Uberlândia-MG</div>
+                        <div class="company">Supermecado Onofre LTDA, Araguari-MG</div>
                     </div><!--//meta-->
                     <div class="details">
-                        <p>hahahahahhaha</p>  
+                        <p>Nesse emprego atuei em uma posição multifacetada que envolvia a organização de prateleiras e a gestão da padaria, sendo meu principal papel a realização de entregas em bicicleta nas proximidades. Essa experiência foi enriquecedora, proporcionando-me habilidades aprimoradas em organização, atendimento ao cliente e logística de entregas. A combinação de responsabilidades diversas nesse ambiente dinâmico contribuiu significativamente para meu desenvolvimento profissional, destacando-me como um profissional versátil e proativo. Não posso deixar de demonstrar aqui um breve sentimento de saudade, dado a simplicidade da coisa. </p>  
                         
                     </div><!--//details-->
                 </div><!--//item-->
@@ -191,13 +215,13 @@
                 <div class="item more d-none">
                     <div class="meta">
                         <div class="upper-row">
-                            <h3 class="job-title">Onofre2</h3>
-                            <div class="time">2019 - 2022</div>
+                            <h3 class="job-title">Vendedor</h3>
+                            <div class="time">2016 - 2016</div>
                         </div><!--//upper-row-->
-                        <div class="company">Algar Tech, Uberlândia-MG</div>
+                        <div class="company">Casa das Embalagens, Araguari-MG</div>
                     </div><!--//meta-->
                     <div class="details">
-                        <p>hahahahahhaha</p>  
+                        <p>Iniciei minha carreira profissional em uma casa de embalagens, desempenhando um papel vital na organização operacional. Como encarregado, fui responsável pela organização eficiente das prateleiras, gestão de estoque e coordenação estratégica do descarregamento de cargas.</p>  
                         
                     </div><!--//details-->
                 </div><!--//item-->
@@ -229,7 +253,9 @@
                     <span class="project-title"><a href="*" target="_blank">Sabedoria Jedi</a></span> - <span class="project-tagline">Inspirado na serie "The clone Wars", da franquia Star Wars. Esse site feito em HTML, JSS e CSS. Mostra uma frase de inicio de episodio aleatoriamente.  </span>
                 </div><!--//item-->
                 
-            <!--</section>
+            <!-- Skiils em gráfico 
+                
+            </section>
             
             <section class="skills-section section">
                 <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-rocket"></i></span>Skills &amp; Proficiency</h2>
@@ -285,7 +311,7 @@
     <footer class="footer">
         <div class="text-center">
             <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-            <small class="copyright">Designed with <i class="fa-solid fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+            <small class="copyright">Designed with <i class="fa-solid fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley edit for Felipe Cordeiro</a> </small>
         </div><!--//container-->
     </footer><!--//footer-->
         
